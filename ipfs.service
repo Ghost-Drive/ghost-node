@@ -1,0 +1,9 @@
+[Unit]
+Description=IPFS Daemon
+After=syslog.target network.target remote-fs.target nss-lookup.target
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/ipfs daemon --enable-namesys-pubsub
+User=
+[Install]
+WantedBy=multi-user.target
