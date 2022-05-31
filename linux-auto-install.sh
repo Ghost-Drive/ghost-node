@@ -81,5 +81,8 @@ sudo systemctl daemon-reload
 sudo systemctl enable ipfs
 sudo systemctl start ipfs
 
+echo 'IPFS was added to autostart'
+echo 'Success!'
+
 
 
