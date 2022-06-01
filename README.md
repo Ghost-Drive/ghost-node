@@ -1,6 +1,14 @@
 # ghost-ipfs-node
 
-## What is GhostCloud IPFS node?
+## GhostCloud IPFS node description
+
+GhostCloud is a project that aggregates a number of services, such as GhostDrive, GhostVPN etc.
+It is based on the cutting-edge technologies and contains IPFS, SHA3, GUN, Web 3.0, etc. under the hood.
+GhostCloud incorporates a private IPFS network and the purpose of this repository is to automate and
+simplify the process of node setup in GhostCloud private IPFS network for everyone.
+
+Currently, we fully support only installation in Docker and partially installation on a Linux machine (RHEL,CentOS,Debian,Ubuntu).
+We plan to fully automate a Linux install and add support for Windows and macOS. 
 
 ## Table of Contents
 
