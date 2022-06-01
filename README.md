@@ -43,10 +43,15 @@ docker build -t ghost-ipfs-node .
 
 To run the image (this can be ran *n* times to create *n* peers for the GhostCloud IPFS network):
 ```
-docker run -d -e SWARM_KEY="998a147a3b541d7567c0a242783fe27ee12af7e6b49a657bf11527107a9b5bc5" ghost/ghost-ipfs-node
+docker run -d \
+           -e SWARM_KEY="998a147a3b541d7567c0a242783fe27ee12af7e6b49a657bf11527107a9b5bc5" \
+           -e BOOTSTRAP_NODE_IP="54.158.26.205" \
+           -e BOOTSTRAP_NODE_PEER_ID="12D3KooWFzbkTCyFXfnA1eToqPh1QuAYjhvMaL69yYQ5ZFLxmZcF" \
+           ghost/ghost-ipfs-node
 ```
 
-The SWARM_KEY given above is GhostCloud swarm key.
+The `SWARM_KEY` given above is GhostCloud swarm key. The `BOOTSTRAP_NODE_IP` is the public IP address
+of GhostCloud bootstrap node (master). The `BOOTSTRAP_NODE_PEER_ID` is the peer id of GhostCloud bootstrap node.
 
 ### Linux
 
