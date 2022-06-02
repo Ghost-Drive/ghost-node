@@ -57,11 +57,15 @@ of GhostCloud bootstrap node (master). The `BOOTSTRAP_NODE_PEER_ID` is the peer 
 
 ...
 
-### macOS
+### MacOS
 
 ...
 
 ### Windows
+
+...
+
+### Minning Rewards
 
 ...
 
