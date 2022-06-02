@@ -1,10 +1,12 @@
-# ghost-ipfs-node
+# ghost-ipfs-gen4-node
 
-## GhostCloud IPFS node description
+## P2P Network Description (GXD)
 
-GhostCloud is a project that aggregates a number of services, such as GhostDrive, GhostVPN etc.
+GhostDrive provides a robust solution for secure data storage through the implementation of encryption and network verification protocols. The network publicly verifies the encryption, transmission, receipt, and storage of data without ever being granted access to the data itself through zero-knowledge verification (zk-Starks) and full end-to-end encryption.
+
+GXD is a project that aggregates a number of services, such as GhostDrive, GhostVPN etc.
 It is based on the cutting-edge technologies and contains IPFS, SHA3, GUN, Web 3.0, etc. under the hood.
-GhostCloud incorporates a private IPFS network and the purpose of this repository is to automate and
+GXD Network incorporates a private IPFS network and the purpose of this repository is to automate and
 simplify the process of node setup in GhostCloud private IPFS network for everyone.
 
 Currently, we fully support only installation in Docker and partially installation on a Linux machine (RHEL,CentOS,Debian,Ubuntu).
@@ -17,6 +19,7 @@ We plan to fully automate a Linux install and add support for Windows and macOS.
 - [Install on Linux](#linux)
 - [Install on macOS](#macos)
 - [Install on Windows](#windows)
+- [Rewards](#Rewards)
 - [Updating go-ipfs](#updating-ipfs-on-your-ghost-node)
 
 ### System Requirements
@@ -84,11 +87,15 @@ of GhostCloud bootstrap node (master). The `BOOTSTRAP_NODE_PEER_ID` is the peer 
 
 ...
 
-### macOS
+### MacOS
 
 ...
 
 ### Windows
+
+...
+
+### Rewards
 
 ...
 
