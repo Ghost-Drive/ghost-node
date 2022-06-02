@@ -8,6 +8,10 @@ RUN chmod 0755 /usr/local/bin/start_ipfs
 # Enforce GhostCloud private network settings
 ENV LIBP2P_FORCE_PNET 1
 
+EXPOSE 4001
+EXPOSE 5001
+EXPOSE 8080
+
 # The entrypoint (i.e. script.sh) will setup swarm.key, init IPFS, remove all public
 # bootstrap values and start the ipfs daemon
 ENTRYPOINT ["/usr/local/bin/start_ipfs"]

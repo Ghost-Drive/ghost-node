@@ -9,5 +9,5 @@ ipfs bootstrap rm --all
 ipfs bootstrap add /ip4/$BOOTSTRAP_NODE_IP/tcp/4001/ipfs/$BOOTSTRAP_NODE_PEER_ID
 export LIBP2P_FORCE_PNET=1
 ipfs config Addresses.Gateway /ip4/0.0.0.0/tcp/8080
-ipfs config Addresses.API /ip4/0.0.0.0/tcp/8080
+ipfs config Addresses.API /ip4/0.0.0.0/tcp/5001
 ipfs daemon
