@@ -31,6 +31,33 @@ We also highly recommend running it on an SSD, preferably on Gen4 NVMe SSD of an
 If your system is resource-constrained, we recommend initializing your daemon with `ipfs init --profile=lowpower`.
 For this, you'll need to replace the line 7 of `setup.sh` with the command above.
 
+#### Recommended system specifications
+
+• CPU
+    12 cores / 24 threads, or more, 2.8GHz, or faster
+    AVX2 instruction support (to use official release binaries, self-compile otherwise)
+    Support for AVX512f and/or SHA-NI instructions is helpful
+    The AMD Zen3 series is popular with the validator community
+
+• RAM
+    128GB, or more
+
+• Motherboard with 256GB capacity suggested
+
+• Disk
+    PCIe Gen4 NVME SSD
+    Accounts: 500GB, or larger. High TBW (Total Bytes Written)
+    Ledger: 64TB or larger. High TBW suggested
+
+• OS: (Optional) 10GB, or larger. SATA OK
+    The OS may be installed on the ledger disk, though testing has shown better performance with the ledger on its own disk
+    Accounts and ledger can be stored on the same disk, however due to high IOPS, this is not recommended
+    The Samsung 970 and 980 Pro series SSDs are popular with the validator community
+
+• GPUs
+    Not strictly necessary at this time
+    Motherboard and power supply speed to add one or more high-end GPUs in the future suggested
+
 ### Docker
 
 The precompiled docker image is available for download at https://hub.docker.com/r/ghost/ghost-ipfs-node
