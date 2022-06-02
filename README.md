@@ -1,6 +1,6 @@
 # ghost-ipfs-gen4-node
 
-## GXD Network Description
+## P2P Network Description (GXD)
 
 GhostDrive provides a robust solution for secure data storage through the implementation of encryption and network verification protocols. The network publicly verifies the encryption, transmission, receipt, and storage of data without ever being granted access to the data itself through zero-knowledge verification (zk-Starks) and full end-to-end encryption.
 
