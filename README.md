@@ -2,6 +2,8 @@
 
 ## GXD Network Description
 
+GhostDrive provides a robust solution for secure data storage through the implementation of encryption and network verification protocols. The network publicly verifies the encryption, transmission, receipt, and storage of data without ever being granted access to the data itself through zero-knowledge verification (zk-Starks) and full end-to-end encryption.
+
 GXD is a project that aggregates a number of services, such as GhostDrive, GhostVPN etc.
 It is based on the cutting-edge technologies and contains IPFS, SHA3, GUN, Web 3.0, etc. under the hood.
 GXD Network incorporates a private IPFS network and the purpose of this repository is to automate and
