@@ -68,4 +68,4 @@ IMAGE_ID=$(docker ps -a | grep ghost-ipfs-gen4-node | awk '{print$2}')
 echo "OUTPUTS:"
 echo "Container ID: $CONTAINER_ID"
 echo "Image ID: $IMAGE_ID"
-echo "Peer ID: $(docker exec -it "$CONTAINER_ID" sh -c "ipfs config show | grep 'PeerID' | cut -d ':' -f2")"
+echo "Peer ID: $(docker exec -i "$CONTAINER_ID" sh -c "ipfs config show | grep 'PeerID' | cut -d ':' -f2")"
