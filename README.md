@@ -63,27 +63,23 @@ For this, you'll need to replace the line 7 of `setup.sh` with the command above
 
 ### Docker
 
-The precompiled docker image is available for download at https://hub.docker.com/r/ghost/ghost-ipfs-node
+```
+curl -s https://raw.githubusercontent.com/Ghost-Drive/ghost-node/main/get-gxd-docker.sh | bash -s
+```
+OR
+```
+wget -qO -  https://raw.githubusercontent.com/Ghost-Drive/ghost-node/main/get-gxd-docker.sh | bash -s
+```
+You will be prompted for a node name in the middle of a setup process. 
+Thus, you can run the script *n* times to launch *n* nodes.
 
-Alternatively, if you wish to manually build the Docker file, simply run:
+A precompiled docker image is available for download at https://hub.docker.com/r/ghost/ghost-ipfs-node
+
+Alternatively, if you wish to manually build the Docker file, clone the project and simply run:
 
 ```
-docker build -t ghost-ipfs-gen4-node .
+docker build -t ghost-ipfs-gen4-node ./docker
 ```
-
-To run the image (this can be run *n* times to create *n* peers for the GhostCloud IPFS network):
-```
-docker run --name ghost-ipfs-gen4-node -d \
-    -p 4001:4001 -p 5001:5001 -p 8888:8080 \
-    -v $(pwd)/data/ipfs:/data/ipfs/ \
-    -e SWARM_KEY="998a147a3b541d7567c0a242783fe27ee12af7e6b49a657bf11527107a9b5bc5" \
-    -e BOOTSTRAP_NODE_IP="54.158.26.205" \
-    -e BOOTSTRAP_NODE_PEER_ID="12D3KooWFzbkTCyFXfnA1eToqPh1QuAYjhvMaL69yYQ5ZFLxmZcF" \
-    ghostdriveprotocol/ghost-ipfs-gen4-node
-```
-
-The `SWARM_KEY` given above is GhostCloud swarm key. The `BOOTSTRAP_NODE_IP` is the public IP address
-of GhostCloud bootstrap node (master). The `BOOTSTRAP_NODE_PEER_ID` is the peer id of GhostCloud bootstrap node.
 
 ### Linux
 

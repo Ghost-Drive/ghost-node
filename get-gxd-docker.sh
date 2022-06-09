@@ -11,7 +11,6 @@ USER=$(whoami)
 SWARM_KEY='998a147a3b541d7567c0a242783fe27ee12af7e6b49a657bf11527107a9b5bc5'
 BOOTSTRAP_NODE_IP='54.158.26.205'
 BOOTSTRAP_NODE_PEER_ID='12D3KooWFzbkTCyFXfnA1eToqPh1QuAYjhvMaL69yYQ5ZFLxmZcF'
-DOCKER_NAME='ghost-ipfs-gen4-node'
 
 #Functions
 command_exists() {
@@ -57,13 +56,15 @@ fi
 #GhostCloud IPFS node spawn
 
 echo "Setting up GhostCloud IPFS node in a Docker container..."
-docker run --name $DOCKER_NAME -d \
+read -rp "Enter node name : " DOCKER_NAME
+
+docker run --name "$DOCKER_NAME" -d \
     -p 4001:4001 -p 5001:5001 -p 8888:8080 \
     -v $(pwd)/data/ipfs:/data/ipfs/ \
     -e SWARM_KEY=$SWARM_KEY \
     -e BOOTSTRAP_NODE_IP=$BOOTSTRAP_NODE_IP \
     -e BOOTSTRAP_NODE_PEER_ID=$BOOTSTRAP_NODE_PEER_ID \
-    ghostdriveprotocol/$DOCKER_NAME
+    ghostdriveprotocol/ghost-ipfs-gen4-node
 
 CONTAINER_ID=$(docker ps -a | grep ghost-ipfs-gen4-node | awk '{print$1}')
 IMAGE_ID=$(docker ps -a | grep ghost-ipfs-gen4-node | awk '{print$2}')
