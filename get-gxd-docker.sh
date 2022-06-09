@@ -56,7 +56,17 @@ fi
 #GhostCloud IPFS node spawn
 
 echo "Setting up GhostCloud IPFS node in a Docker container..."
-read -r -n 1 -p "Enter node name : " DOCKER_NAME
+
+read -rp "Enter your node name: " DOCKER_NAME
+
+while true; do
+  read -r -p "Do you confirm?" yn
+    case $yn in
+        [Yy]* ) true; break;;
+        [Nn]* ) exit;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
 
 docker run --name "$DOCKER_NAME" -d \
     -p 4001:4001 -p 5001:5001 -p 8888:8080 \
