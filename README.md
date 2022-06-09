@@ -7,7 +7,8 @@ GhostDrive provides a robust solution for secure data storage through the implem
 GXD is a project that aggregates a number of services, such as GhostDrive, GhostVPN etc.
 It is based on the cutting-edge technologies and contains IPFS, SHA3, GUN, Web 3.0, etc. under the hood.
 GXD Network incorporates a private IPFS network and the purpose of this repository is to automate and
-simplify the process of node setup in GhostCloud private IPFS network for everyone.
+simplify the process of node setup in GhostCloud private IPFS network for everyone. 
+As this is a private network, you will always use the same `SWARM_KEY` and there is no need for NAT Forwarding of TCP/UDP ports to each node behind a firewall since all nodes spawned simply register with our bootstrap node to allow incoming traffic to the node.
 
 Currently, we fully support only installation in Docker and partially installation on a Linux machine (RHEL,CentOS,Debian,Ubuntu).
 We plan to fully automate a Linux install and add support for Windows and macOS. 
@@ -19,8 +20,9 @@ We plan to fully automate a Linux install and add support for Windows and macOS.
 - [Install on Linux](#linux)
 - [Install on macOS](#macos)
 - [Install on Windows](#windows)
-- [Rewards](#Rewards)
+- [Rewards](#rewards)
 - [Updating go-ipfs](#updating-ipfs-on-your-ghost-node)
+- [Notes](#notes)
 
 ### System Requirements
 
@@ -134,3 +136,8 @@ $ ipfs get /ipns/dist.ipfs.io/go-ipfs/$VERSION/go-ipfs_$VERSION_linux-amd64.tar.
 $ ipfs get /ipns/dist.ipfs.io/go-ipfs/$VERSION/go-ipfs_$VERSION_linux-arm.tar.gz # linux arm build
 $ ipfs get /ipns/dist.ipfs.io/go-ipfs/$VERSION/go-ipfs_$VERSION_windows-amd64.zip # windows 64-bit build
 ```
+
+#### Notes
+
+1. As IPFS default WebUI is shipped via the public IPFS network, it is not available out-of-the-box in our GhostCloud private IPFS network.
+   If you need to use it, it can be separately installed from the https://github.com/ipfs/ipfs-webui
