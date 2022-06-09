@@ -64,11 +64,11 @@ For this, you'll need to replace the line 7 of `setup.sh` with the command above
 ### Docker
 
 ```
-curl -s https://raw.githubusercontent.com/Ghost-Drive/ghost-node/main/get-gxd-docker.sh | bash -s
+bash <(curl -s https://raw.githubusercontent.com/Ghost-Drive/ghost-node/main/get-gxd-docker.sh)
 ```
 OR
 ```
-wget -qO -  https://raw.githubusercontent.com/Ghost-Drive/ghost-node/main/get-gxd-docker.sh | bash -s
+bash <(wget -qO -  https://raw.githubusercontent.com/Ghost-Drive/ghost-node/main/get-gxd-docker.sh)
 ```
 You will be prompted for a node name in the middle of a setup process. 
 Thus, you can run the script *n* times to launch *n* nodes.
