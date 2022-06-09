@@ -23,7 +23,7 @@ if uname -a | grep 'Debian\|Ubuntu'; then
   elif [ -f /etc/redhat-release ]; then
     sudo yum update -y && sudo yum upgrade -y
 else
-  echo "Unknown Linux distro...Exiting now"; exit 0
+  echo "Unsupported Linux distro...Exiting now"; exit 0
 fi
 
 echo 'Installing Go...'

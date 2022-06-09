@@ -55,8 +55,6 @@ For this, you'll need to replace the line 7 of `setup.sh` with the command above
     Ledger: 64TB or larger. High TBW suggested
 
 • OS: (Optional) 10GB, or larger. SATA OK
-    The OS may be installed on the ledger disk, though testing has shown better performance with the ledger on its own disk
-    Accounts and ledger can be stored on the same disk, however due to high IOPS, this is not recommended
     The Samsung 970 and 980 Pro series SSDs are popular with the validator community
 
 • GPUs
@@ -73,7 +71,7 @@ Alternatively, if you wish to manually build the Docker file, simply run:
 docker build -t ghost-ipfs-gen4-node .
 ```
 
-To run the image (this can be ran *n* times to create *n* peers for the GhostCloud IPFS network):
+To run the image (this can be run *n* times to create *n* peers for the GhostCloud IPFS network):
 ```
 docker run --name ghost-ipfs-gen4-node -d \
     -p 4001:4001 -p 5001:5001 -p 8888:8080 \
