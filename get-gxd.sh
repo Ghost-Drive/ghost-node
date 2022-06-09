@@ -20,10 +20,10 @@ if [ -z "$BRANCH" ]; then
 fi
 
 if _exists curl; then
-  curl -s https://raw.githubusercontent.com/acmesh-official/acme.sh/$BRANCH/acme.sh -o docker-install.sh \
+  curl -s https://raw.githubusercontent.com/Ghost-Drive/ghost-node/$BRANCH/docker/docker-install.sh -o docker-install.sh \
     && sudo sh ./docker-install.sh && rm -f docker-install.sh
 elif _exists wget; then
-  wget -qO -  https://raw.githubusercontent.com/acmesh-official/acme.sh/$BRANCH/acme.sh \
+  wget -qO - https://raw.githubusercontent.com/Ghost-Drive/ghost-node/$BRANCH/docker/docker-install.sh \
     && sudo sh ./docker-install.sh && rm -f docker-install.sh
 else
   echo "Sorry, you must have curl or wget installed first."
