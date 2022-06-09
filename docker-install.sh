@@ -7,6 +7,7 @@ set -e
 #Variables
 
 OS=$(uname -s)
+USER=$(whoami)
 SWARM_KEY='998a147a3b541d7567c0a242783fe27ee12af7e6b49a657bf11527107a9b5bc5'
 BOOTSTRAP_NODE_IP='54.158.26.205'
 BOOTSTRAP_NODE_PEER_ID='12D3KooWFzbkTCyFXfnA1eToqPh1QuAYjhvMaL69yYQ5ZFLxmZcF'
@@ -50,6 +51,8 @@ else
   echo "Docker is not detected. Installing Docker..."
   curl -fsSL https://get.docker.com -o get-docker.sh
   sudo sh get-docker.sh
+  sudo usermod -aG docker "$USER"
+  newgrp docker
 fi
 
 #GhostCloud IPFS node spawn
