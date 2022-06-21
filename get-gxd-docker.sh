@@ -78,7 +78,7 @@ done
 
 docker run --name "$DOCKER_NAME" -d \
     -p 4001:4001 -p 5001:5001 -p 8888:8080 \
-    -v $(pwd)/data/ipfs:/data/ipfs/ \
+    -v "$(pwd)"/data/ipfs:/data/ipfs/ \
     -e SWARM_KEY=$SWARM_KEY \
     -e BOOTSTRAP_NODE_IP=$BOOTSTRAP_NODE_IP \
     -e BOOTSTRAP_NODE_PEER_ID=$BOOTSTRAP_NODE_PEER_ID \
