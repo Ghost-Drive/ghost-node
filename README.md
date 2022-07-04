@@ -135,3 +135,18 @@ $ ipfs get /ipns/dist.ipfs.io/go-ipfs/$VERSION/go-ipfs_$VERSION_windows-amd64.zi
 
 1. As IPFS default WebUI is shipped via the public IPFS network, it is not available out-of-the-box in our GhostCloud private IPFS network.
    If you need to use it, it can be separately installed from the https://github.com/ipfs/ipfs-webui
+   
+   
+   
+
+   
+  ### GXD Master Node requirements
+  
+  Typical 4-node NVM + GPU installation
+- Rack 24U 1x
+- Supermicro 2U GPU Lines server 4x 
+- Intel Xeon LGA-4189 16-core processor 4x 
+- NVMe SSD 4Tb Gen 3/4 2.5” hot swap drive 16x 
+- GPU PNY NVIDIA A40 48GB – 4x
+- HPE FlexNetwork 5130 HI Switch Series 1x 
+- Accessories
