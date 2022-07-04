@@ -23,7 +23,7 @@ We plan to fully automate a Linux install and add support for Windows and macOS.
 - [Rewards](#rewards)
 - [Updating go-ipfs](#updating-ipfs-on-your-ghost-node)
 - [Notes](#notes)
-- [MasterNode](#Master)
+- [MasterNode](#notes)
 
 ### System Requirements
 
