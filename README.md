@@ -5,11 +5,11 @@
 GhostDrive provides a robust solution for secure data storage through the implementation of encryption and network verification protocols. The fundamental shift that GhostDrive facilitates is a foundational trustless assurance of privacy with complete traceability enabled by utility encryption tokens. GhostDrive is designed to run on almost any smart contract blockchain, including Solana, Ethereum, Polygon, Binance Smart Chain, or a private server network. However, its functionality is always facilitated by the GXD Utility Encryption Token, the underlying token of the GXD Network.
 
 Support of the node layer and data storage for the GhostDrive ecosystem is done through validation by the network of GXD token holders. GXD tokens serve as Proof of Security for the encryption and transmission of files, including:
-Proof of storage space
-Proof of encryption
-Proof of file transmission
-Proof of file delivery
-Proof of file access
+- Proof of storage space
+- Proof of encryption
+- Proof of file transmission
+- Proof of file delivery
+- Proof of file access
 
 GhostDrive supports staking GXD tokens to encourage a broad and stable network of verifiers with true decentralization. In return for staking, users are granted more GXD tokens. Rewards are calculated based on users' space and drive speed (Gen4 nodes are preferred to help in increasing the network speed). In addition, malicious nodes and validators will be penalized with the loss of staked GXD
 
