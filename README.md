@@ -1,13 +1,20 @@
 # ghost-ipfs-gen4-node
 
-## P2P Network Description (GXD)
+## GxD Network Description (P2P)
 
-GhostDrive provides a robust solution for secure data storage through the implementation of encryption and network verification protocols. The network publicly verifies the encryption, transmission, receipt, and storage of data without ever being granted access to the data itself through zero-knowledge verification (zk-Starks) and full end-to-end encryption.
+GhostDrive provides a robust solution for secure data storage through the implementation of encryption and network verification protocols. The fundamental shift that GhostDrive facilitates is a foundational trustless assurance of privacy with complete traceability enabled by utility encryption tokens. GhostDrive is designed to run on almost any smart contract blockchain, including Solana, Ethereum, Polygon, Binance Smart Chain, or a private server network. However, its functionality is always facilitated by the GXD Utility Encryption Token, the underlying token of the GXD Network.
 
-GXD is a project that aggregates a number of services, such as GhostDrive, GhostVPN etc.
+Support of the node layer and data storage for the GhostDrive ecosystem is done through validation by the network of GXD token holders. GXD tokens serve as Proof of Security for the encryption and transmission of files, including:
+Proof of storage space
+Proof of encryption
+Proof of file transmission
+Proof of file delivery
+Proof of file access
+
+GhostDrive supports staking GXD tokens to encourage a broad and stable network of verifiers with true decentralization. In return for staking, users are granted more GXD tokens. Rewards are calculated based on users' space and drive speed (Gen4 nodes are preferred to help in increasing the network speed). In addition, malicious nodes and validators will be penalized with the loss of staked GXD
+
 It is based on the cutting-edge technologies and contains IPFS, SHA3, GUN, Web 3.0, etc. under the hood.
-GXD Network incorporates a private IPFS network and the purpose of this repository is to automate and
-simplify the process of node setup in GhostCloud private IPFS network for everyone. 
+GXD Network incorporates a private IPFS network and the purpose of this repository is to automate and simplify the process of node setup in GhostCloud private IPFS network for everyone. 
 As this is a private network, you will always use the same `SWARM_KEY` and there is no need for NAT Forwarding of TCP/UDP ports to each node behind a firewall since all nodes spawned simply register with our bootstrap node to allow incoming traffic to the node.
 
 Currently, we fully support only installation in Docker and partially installation on a Linux machine (RHEL,CentOS,Debian,Ubuntu).
