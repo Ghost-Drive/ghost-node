@@ -23,6 +23,7 @@ We plan to fully automate a Linux install and add support for Windows and macOS.
 - [Rewards](#rewards)
 - [Updating go-ipfs](#updating-ipfs-on-your-ghost-node)
 - [Notes](#notes)
+- [MasterNode](#Master)
 
 ### System Requirements
 
@@ -140,7 +141,7 @@ $ ipfs get /ipns/dist.ipfs.io/go-ipfs/$VERSION/go-ipfs_$VERSION_windows-amd64.zi
    
 
    
-  ### GXD Master Node requirements
+  ### Master Node requirements
   
   Typical 4-node NVM + GPU installation
 - Rack 24U 1x
