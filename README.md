@@ -1,4 +1,4 @@
-# ghost-ipfs-gen4-node
+# private-ipfs-gen4-network
 
 ## GxD Network Description (P2P)
 
