@@ -1,5 +1,3 @@
-# private-ipfs-gen4-network
-
 ## GxD Network Description (P2P)
 
 GhostDrive provides a robust solution for secure data storage through the implementation of encryption and network verification protocols. The fundamental shift that GhostDrive facilitates is a foundational trustless assurance of privacy with complete traceability enabled by utility encryption tokens. GhostDrive is designed to run on almost any smart contract blockchain, including Solana, Ethereum, Polygon, Binance Smart Chain, or a private server network. However, its functionality is always facilitated by the GXD Token, the underlying token of the GXD Network.
@@ -25,7 +23,6 @@ We plan to fully automate a Linux install and add support for Windows and macOS.
 - [System Requirements](#system-requirements)
 - [Install in Docker](#docker)
 - [Install on Linux](#linux)
-- [Install on macOS](#macos)
 - [Rewards](#rewards)
 - [Updating go-ipfs](#updating-ipfs-on-your-ghost-node)
 - [Notes](#notes)
@@ -92,9 +89,6 @@ docker build -t ghost-ipfs-gen4-node ./docker
 
 ...
 
-### MacOS
-
-...
 
 ### Rewards
 
