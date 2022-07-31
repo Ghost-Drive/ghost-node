@@ -26,7 +26,6 @@ We plan to fully automate a Linux install and add support for Windows and macOS.
 - [Install in Docker](#docker)
 - [Install on Linux](#linux)
 - [Install on macOS](#macos)
-- [Install on Windows](#windows)
 - [Rewards](#rewards)
 - [Updating go-ipfs](#updating-ipfs-on-your-ghost-node)
 - [Notes](#notes)
@@ -97,10 +96,6 @@ docker build -t ghost-ipfs-gen4-node ./docker
 
 ...
 
-### Windows
-
-...
-
 ### Rewards
 
 ...
@@ -145,10 +140,9 @@ $ ipfs get /ipns/dist.ipfs.io/go-ipfs/$VERSION/go-ipfs_$VERSION_windows-amd64.zi
    If you need to use it, it can be separately installed from the https://github.com/ipfs/ipfs-webui
    
    
-   
 
    
-  ### Master Node requirements
+  ### Master Node Requirements
   
   Typical 4-node NVM + GPU installation
 - Rack 24U 1x
