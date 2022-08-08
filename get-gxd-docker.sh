@@ -49,7 +49,7 @@ if command_exists docker && [ -e /var/run/docker.sock ]; then
 else
   echo "Docker is not detected. Installing Docker..."
   curl -fsSL https://get.docker.com -o get-docker.sh
-  sudo source get-docker.sh || true
+  sudo bash get-docker.sh || true
   sudo usermod -aG docker "$USER" && newgrp docker
 fi
 
