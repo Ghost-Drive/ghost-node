@@ -56,8 +56,9 @@ fi
 
 echo "Setting up GhostCloud IPFS node in a Docker container..."
 
-read -n 30 -rp "Enter your node name: " DOCKER_NAME
-DOCKER_NAME="${DOCKER_NAME:="ghost-ipfs-gen4-node"}"
+DOCKER_NAME=$(hostname)
+read -n 30 -rp "Enter your node name: " input
+DOCKER_NAME="${input:-$DOCKER_NAME}"
 
 if [[ "${DOCKER_NAME}" =~ [^A-Za-z0-9._-] ]]; then
   echo "That name is NOT allowed."
