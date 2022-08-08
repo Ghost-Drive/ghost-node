@@ -33,10 +33,6 @@ is_darwin() {
 	esac
 }
 
-catch() {
-  echo "Docker install complete"
-}
-
 #Check that script is run on a supported system
 
 if [ "${OS}" = "Linux" ] || is_darwin || is_wsl; then
@@ -54,8 +50,9 @@ else
   echo "Docker is not detected. Installing Docker..."
   curl -fsSL https://get.docker.com -o get-docker.sh
   chown $USER: get-docker.sh && chmod +x get-docker.sh
-  trap 'catch' return
+  set +e
   . ./get-docker.sh
+  set -e
   sudo usermod -aG docker "$USER" && newgrp docker
 fi
 
