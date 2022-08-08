@@ -46,11 +46,10 @@ if command_exists docker && [ -e /var/run/docker.sock ]; then
   true && echo "Docker is already installed, skipping Docker install..."
 else
   echo "Docker is not detected. Installing Docker..."
-  curl -fsSL https://get.docker.com -o get-docker.sh
-  chown $USER: get-docker.sh && chmod +x get-docker.sh
-  (
-  	sh ./get-docker.sh
-  )
+  bash <(curl -s https://raw.githubusercontent.com/docker/docker-install/master/install.sh)
+  #curl -fsSL https://get.docker.com -o get-docker.sh
+  #chown $USER: get-docker.sh && chmod +x get-docker.sh
+  #sh ./get-docker.sh
   sudo usermod -aG docker "$USER" && newgrp docker
 fi
 
