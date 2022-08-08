@@ -76,8 +76,7 @@ OR
 bash <(wget -qO - https://raw.githubusercontent.com/docker/docker-install/master/install.sh) && \
 bash <(wget -qO -  https://raw.githubusercontent.com/Ghost-Drive/ghost-node/main/get-gxd-docker.sh)
 ```
-You will be prompted for a node name in the middle of a setup process. 
-Thus, you can run the script *n* times to launch *n* nodes.
+You will be prompted for a node name in the middle of the setup process. If no name is provided, the hostname of the machine the script is launched on will be taken.
 
 A precompiled docker image is available for download at https://hub.docker.com/r/ghost/ghost-ipfs-node
 
