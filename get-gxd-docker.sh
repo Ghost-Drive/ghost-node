@@ -36,8 +36,7 @@ is_darwin() {
 docker_install () {
   echo "Docker is not detected. Installing Docker..."
   curl -fsSL https://get.docker.com -o get-docker.sh
-  chmod +x get-docker.sh
-  ./get-docker.sh
+  sudo bash ./get-docker.sh
 }
 
 #Check that script is run on a supported system
@@ -55,7 +54,6 @@ if command_exists docker && [ -e /var/run/docker.sock ]; then
   true && echo "Docker is already installed, skipping Docker install..."
 else
   trap docker_install EXIT
-  docker_install
 fi
 
 #GhostCloud IPFS node spawn
