@@ -37,6 +37,7 @@ docker_install () {
   echo "Docker is not detected. Installing Docker..."
   curl -fsSL https://get.docker.com -o get-docker.sh
   sudo bash ./get-docker.sh
+  sudo usermod -aG docker "$USER" && newgrp docker
 }
 
 #Check that script is run on a supported system
