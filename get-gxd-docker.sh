@@ -56,6 +56,7 @@ if command_exists docker && [ -e /var/run/docker.sock ]; then
   true && echo "Docker is already installed, skipping Docker install..."
 else
   trap docker_install EXIT
+  docker_install
 fi
 
 #GhostCloud IPFS node spawn
