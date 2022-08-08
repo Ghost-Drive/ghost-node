@@ -43,19 +43,13 @@ fi
 #Check if Docker is already installed and install it if not
 
 if command_exists docker && [ -e /var/run/docker.sock ]; then
-  true && echo "Docker is already installed, skipping Docker install..."
+  echo "Docker is detected in the system."
+  echo "Setting up GhostCloud IPFS node in a Docker container..."
 else
-  echo "Docker is not detected. Installing Docker..."
-  curl -sL https://raw.githubusercontent.com/docker/docker-install/master/install.sh | bash -s
-  #curl -fsSL https://get.docker.com -o get-docker.sh
-  #chown $USER: get-docker.sh && chmod +x get-docker.sh
-  #sh ./get-docker.sh
-  sudo usermod -aG docker "$USER" && newgrp docker
+  echo "Docker is not detected in the system. Please install Docker first."
 fi
 
 #GhostCloud IPFS node spawn
-
-echo "Setting up GhostCloud IPFS node in a Docker container..."
 
 DOCKER_NAME=$(hostname)
 read -e -n 30 -r -p "Enter your node name: " input
