@@ -63,7 +63,7 @@ fi
 echo "Setting up GhostCloud IPFS node in a Docker container..."
 
 DOCKER_NAME=$(hostname)
-read -n 30 -r -p -e "Enter your node name: " input
+read -e -n 30 -r -p "Enter your node name: " input
 DOCKER_NAME="${input:-$DOCKER_NAME}"
 
 if [[ "${DOCKER_NAME}" =~ [^A-Za-z0-9._-] ]]; then
@@ -74,7 +74,7 @@ else
 fi
 
 while true; do
-  read -r -p -e "Do you confirm?" yn
+  read -e -r -p "Do you confirm?" yn
     case $yn in
         [Yy]* ) true; break;;
         [Nn]* ) exit;;
