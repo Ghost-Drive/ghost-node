@@ -68,10 +68,12 @@ For this, you'll need to replace the line 7 of `setup.sh` with the command above
 ### Docker
 
 ```
+bash <(curl -s https://raw.githubusercontent.com/docker/docker-install/master/install.sh) && \
 bash <(curl -s https://raw.githubusercontent.com/Ghost-Drive/ghost-node/main/get-gxd-docker.sh)
 ```
 OR
 ```
+bash <(curl -s https://raw.githubusercontent.com/docker/docker-install/master/install.sh) && \
 bash <(wget -qO -  https://raw.githubusercontent.com/Ghost-Drive/ghost-node/main/get-gxd-docker.sh)
 ```
 You will be prompted for a node name in the middle of a setup process. 
