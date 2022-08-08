@@ -33,6 +33,12 @@ is_darwin() {
 	esac
 }
 
+docker_install () {
+  echo "Docker is not detected. Installing Docker..."
+  curl -fsSL https://get.docker.com -o get-docker.sh
+  ./get-docker.sh
+}
+
 #Check that script is run on a supported system
 
 if [ "${OS}" = "Linux" ] || is_darwin || is_wsl; then
@@ -47,10 +53,7 @@ fi
 if command_exists docker && [ -e /var/run/docker.sock ]; then
   true && echo "Docker is already installed, skipping Docker install..."
 else
-  echo "Docker is not detected. Installing Docker..."
-  curl -fsSL https://get.docker.com -o get-docker.sh
-  sudo bash get-docker.sh || true
-  sudo usermod -aG docker "$USER" && newgrp docker
+  docker_install
 fi
 
 #GhostCloud IPFS node spawn
