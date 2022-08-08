@@ -51,7 +51,7 @@ fi
 if command_exists docker && [ -e /var/run/docker.sock ]; then
   true && echo "Docker is already installed, skipping Docker install..."
 else
-  trap 'catch' exit(0) return
+  trap 'catch' exit return
   echo "Docker is not detected. Installing Docker..."
   curl -fsSL https://get.docker.com -o get-docker.sh
   chown $USER: get-docker.sh && chmod +x get-docker.sh
