@@ -2,7 +2,7 @@
 
 # Exit immediately if a command exits with a non-zero status.
 
-set -e
+#set -e
 
 #Variables
 
@@ -50,9 +50,7 @@ else
   echo "Docker is not detected. Installing Docker..."
   curl -fsSL https://get.docker.com -o get-docker.sh
   chown $USER: get-docker.sh && chmod +x get-docker.sh
-  set +e
   . ./get-docker.sh
-  set -e
   sudo usermod -aG docker "$USER" && newgrp docker
 fi
 
