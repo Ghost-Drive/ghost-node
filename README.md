@@ -1,21 +1,23 @@
-## GxD P2P Network 
+## Ghostdrive P2P Network 
 
-GhostDrive provides a robust solution for secure data storage through the implementation of encryption and network verification protocols. The fundamental shift that GhostDrive facilitates is a foundational trustless assurance of privacy with complete traceability enabled by utility encryption tokens. GhostDrive is designed to run on almost any smart contract blockchain, including Solana, Ethereum, Polygon, Binance Smart Chain, or a private server network. However, its functionality is always facilitated by the GXD Token, the underlying token of the GXD Network.
+GhostDrive provides a robust solution for secure data storage through the implementation of encryption and network verification protocols. The fundamental shift that GhostDrive facilitates is a foundational trustless assurance of privacy with complete traceability enabled by utility encryption tokens. GhostDrive is designed to run on almost any smart contract blockchain, including  Ethereum, Polygon, Binance Smart Chain, or a private server network. 
 
-Support of the node layer and data storage for the GhostDrive ecosystem is done through validation by the network of GXD token holders. GXD tokens serve as Proof of Security for the encryption and transmission of files, including:
+Support of the node layer and data storage for the GhostDrive ecosystem is done through validation by the network of ghostdrive token holders. Ghostdrive tokens serve as Proof of Security for the encryption and transmission of files, including:
 - Proof of storage space
 - Proof of encryption
 - Proof of file transmission
 - Proof of file delivery
 - Proof of file access
+- Proof of AI
+- Proof of Human
 
-GhostDrive supports staking GXD tokens to encourage a broad and stable network of verifiers with true decentralization. In return for staking, users are granted more GXD tokens. Rewards are calculated based on users' space and drive speed (Gen4 nodes are preferred to help in increasing the network speed). In addition, malicious nodes and validators will be penalized with the loss of staked GXD
+GhostDrive will support staking to encourage a broad and stable network of verifiers with true decentralization. In return for staking, users are granted more GXD tokens. Rewards are calculated based on users' space and drive speed (Gen4 nodes are preferred to help in increasing the network speed). In addition, malicious nodes and validators will be penalized with the loss of staked GXD
 
 It is based on the cutting-edge technologies and contains IPFS, SHA3, GUN, Web 3.0, etc. under the hood.
-GXD Network incorporates a private IPFS network and the purpose of this repository is to automate and simplify the process of node setup in GhostCloud private IPFS network for everyone. 
+Ghostdrive Network incorporates a private IPFS network and the purpose of this repository is to automate and simplify the process of node setup in GhostCloud private IPFS network for everyone. 
 As this is a private network, you will always use the same `SWARM_KEY` and there is no need for NAT Forwarding of TCP/UDP ports to each node behind a firewall since all nodes spawned simply register with our bootstrap node to allow incoming traffic to the node.
 
-Currently, we fully support only installation in Docker and partially installation on a Linux machine (RHEL,CentOS,Debian,Ubuntu).
+Currently, we fully support only installation in Docker and partially installation on a Linux machine (RHEL, CentOS, Debian, Ubuntu).
 We plan to fully automate a Linux install and add support for Windows and macOS. 
 
 ## Table of Contents
@@ -54,7 +56,7 @@ For this, you'll need to replace the line 7 of `setup.sh` with the command above
 • Motherboard with 256GB capacity suggested
 
 • Disk
-    PCIe Gen4 NVME SSD
+    PCIe Gen3/4 NVME SSD
     Accounts: 500GB, or larger. High TBW (Total Bytes Written)
     Ledger: 64TB or larger. High TBW suggested
 
@@ -137,7 +139,7 @@ $ ipfs get /ipns/dist.ipfs.io/go-ipfs/$VERSION/go-ipfs_$VERSION_windows-amd64.zi
    
 
    
-  ### Master Node Requirements
+  ### Master Node Requirements // KYC Required, please email us directly: help@ghostdrive.com
   
   Typical 4-node NVM + GPU installation
 - Rack 24U 1x
