@@ -2,7 +2,7 @@
 
 Upgrading IPFS for Enterprise with SHA3 Encryption
 
-GhostDrive, our innovative Layer 2 solution, is geared to enhance the IPFS and Filecoin networks by offering a high-level digital asset management system. It harnesses the strength of four major blockchains - Ethereum (ETH), Filecoin (FIL), Polygon (Matic), and Binance Smart Chain (BNB), ensuring a thorough and efficient platform for users to manage their digital assets, files, and objects.
+GhostDrive, our innovative Layer 2 solution, is geared to enhance the IPFS and Filecoin networks by offering a high-level digital asset management system. It harnesses the strength of four major blockchains - Ethereum (ETH), Filecoin (FIL), and Polygon (Matic), ensuring a thorough and efficient platform for users to manage their digital assets, files, and objects.
 
 At present, we are offering full support for installation within Docker and limited support for installation on a Linux machine (including RHEL, CentOS, Debian, Ubuntu). We're actively working on automating the Linux installation process and broadening our support to include both Windows and macOS.
 
