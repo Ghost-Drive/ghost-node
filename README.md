@@ -16,7 +16,7 @@ At present, we are offering full support for installation within Docker and limi
 - [Notes](#notes)
 - [MasterNode](#notes)
 
-### System Requirements
+### System Requirements (mini)
 
 IPFS requires 512MiB of memory and can run an IPFS node on a Raspberry Pi. 
 However, how much disk space your IPFS installation takes up depends on how much data you're sharing. 
@@ -122,10 +122,10 @@ $ ipfs get /ipns/dist.ipfs.io/go-ipfs/$VERSION/go-ipfs_$VERSION_windows-amd64.zi
 1. As IPFS default WebUI is shipped via the public IPFS network, it is not available out-of-the-box in our GhostCloud private IPFS network.
    If you need to use it, it can be separately installed from the https://github.com/ipfs/ipfs-webui
    
-   
+
 
    
-  ### Master Node Requirements // KYC Required, please email us directly: help@ghostdrive.com
+  ### FOR SP PROVIDERS // KYC is required, please email us directly: hello@ghostdrive.com
   
   Typical 4-node NVM + GPU installation
 - Rack 24U 1x
