@@ -1,9 +1,10 @@
-## GHOST IPFS (PRIVATE)
+## GHOST IPFS 
 
-GhostDrive is a cutting-edge layer 2 solution for the IPFS and Filecoin networks, offering an advanced digital asset management system. It leverages the power of four prominent blockchains, namely Ethereum (ETH), Filecoin (FIL), Polygon (Matic), and Binance Smart Chain (BNB), to provide users with a comprehensive and efficient platform for managing their digital assets, files, objects.
+Upgrading IPFS for Enterprise with SHA3 Encryption
 
-Currently, we fully support only installation in Docker and partial installation on a Linux machine (RHEL, CentOS, Debian, Ubuntu).
-We plan to fully automate a Linux install and add support for Windows and macOS. 
+GhostDrive, our innovative Layer 2 solution, is geared to enhance the IPFS and Filecoin networks by offering a high-level digital asset management system. It harnesses the strength of four major blockchains - Ethereum (ETH), Filecoin (FIL), Polygon (Matic), and Binance Smart Chain (BNB), ensuring a thorough and efficient platform for users to manage their digital assets, files, and objects.
+
+At present, we are offering full support for installation within Docker and limited support for installation on a Linux machine (including RHEL, CentOS, Debian, Ubuntu). We're actively working on automating the Linux installation process and broadening our support to include both Windows and macOS.
 
 ## Table of Contents
 
@@ -22,7 +23,7 @@ However, how much disk space your IPFS installation takes up depends on how much
 A base installation takes up about 12MB of disk space, and the default maximum disk storage is set to 10GB.
 IPFS can run on most Linux, macOS, and Windows systems. We recommend running it on a machine with at least 2 GB of RAM and 2 CPU cores (go-ipfs is highly parallel). 
 On systems with less memory, it may not be completely stable.
-We also highly recommend running it on an SSD, preferably on Gen4 NVMe SSD of any vendor.
+We also highly recommend running it on an SSD, preferably on Gen4+ NVMe SSD of any vendor.
 
 If your system is resource-constrained, we recommend initializing your daemon with `ipfs init --profile=lowpower`.
 For this, you'll need to replace the line 7 of `setup.sh` with the command above.
