@@ -1,23 +1,8 @@
-## Ghostdrive P2P Network 
+## GHOST IPFS (PRIVATE)
 
-GhostDrive provides a robust solution for secure data storage through the implementation of encryption and network verification protocols. The fundamental shift that GhostDrive facilitates is a foundational trustless assurance of privacy with complete traceability enabled by utility encryption tokens. GhostDrive is designed to run on almost any smart contract blockchain, including  Ethereum, Polygon, Binance Smart Chain, or a private server network. 
+GhostDrive is a cutting-edge layer 2 solution for the IPFS and Filecoin networks, offering an advanced digital asset management system. It leverages the power of four prominent blockchains, namely Ethereum (ETH), Filecoin (FIL), Polygon (Matic), and Binance Smart Chain (BNB), to provide users with a comprehensive and efficient platform for managing their digital assets, files, objects.
 
-Support of the node layer and data storage for the GhostDrive ecosystem is done through validation by the network of ghostdrive token holders. Ghostdrive tokens serve as Proof of Security for the encryption and transmission of files, including:
-- Proof of storage space
-- Proof of encryption
-- Proof of file transmission
-- Proof of file delivery
-- Proof of file access
-- Proof of AI
-- Proof of Human
-
-GhostDrive will support staking to encourage a broad and stable network of verifiers with true decentralization. In return for staking, users are granted more GXD tokens. Rewards are calculated based on users' space and drive speed (Gen4 nodes are preferred to help in increasing the network speed). In addition, malicious nodes and validators will be penalized with the loss of staked GXD
-
-It is based on the cutting-edge technologies and contains IPFS, SHA3, GUN, Web 3.0, etc. under the hood.
-Ghostdrive Network incorporates a private IPFS network and the purpose of this repository is to automate and simplify the process of node setup in GhostCloud private IPFS network for everyone. 
-As this is a private network, you will always use the same `SWARM_KEY` and there is no need for NAT Forwarding of TCP/UDP ports to each node behind a firewall since all nodes spawned simply register with our bootstrap node to allow incoming traffic to the node.
-
-Currently, we fully support only installation in Docker and partially installation on a Linux machine (RHEL, CentOS, Debian, Ubuntu).
+Currently, we fully support only installation in Docker and partial installation on a Linux machine (RHEL, CentOS, Debian, Ubuntu).
 We plan to fully automate a Linux install and add support for Windows and macOS. 
 
 ## Table of Contents
